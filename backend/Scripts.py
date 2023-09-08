@@ -11,9 +11,9 @@ def calculate_hourly_mean(fromtime, totime):
     project_absolute_path = os.path.abspath("") + "/"
 
     # importing csv files into df
-    df_batch_registry = pd.read_csv(project_absolute_path + "backend/constructed/new_batch_registry.csv", sep=";")
-    df_cooking_metrics = pd.read_csv(project_absolute_path + "backend/constructed/new_cooking_metrics.csv", sep=";")
-    df_faulty_intervals = pd.read_csv(project_absolute_path + "backend/constructed/new_faulty_intervals.csv", sep=";")
+    df_batch_registry = pd.read_csv(project_absolute_path + "/constructed/new_batch_registry.csv", sep=";")
+    df_cooking_metrics = pd.read_csv(project_absolute_path + "/constructed/new_cooking_metrics.csv", sep=";")
+    df_faulty_intervals = pd.read_csv(project_absolute_path + "/constructed/new_faulty_intervals.csv", sep=";")
 
     # filtering cooking metrics and faulty intervals for machine m1
     df_cooking_metrics = df_cooking_metrics[df_cooking_metrics["machine_id"] == "m1"]

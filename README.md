@@ -21,8 +21,9 @@ run main.py to start flask and the backend is up.
  
 Now to run the code you have two possibilities: just sending a request to http://127.0.0.1:3010//hourlymean/<path:fromtime>/<path:totime>
 and getting back the Json of the resulting dataset.
+But at least look at the video in backend/presentation to see how it would've been with frontend..
 
-But if you want to live the complete experience, use the frontend.
+Anyway, if you want to live the complete experience, use the frontend.
 open a terminal on the frontend folder, or if you're in the root, type this command:
 ```bash
 cd frontend
